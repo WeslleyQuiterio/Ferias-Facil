@@ -1,0 +1,58 @@
+﻿@model FeriasFacil.Models.PeriodoDeFerias
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>PeriodoDeFerias</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Funcionario.Nome)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Funcionario.Nome)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.AnoReferencia)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AnoReferencia)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DataVingencia)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DataVingencia)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DataVencimento)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DataVencimento)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Saldo)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Saldo)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.ID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

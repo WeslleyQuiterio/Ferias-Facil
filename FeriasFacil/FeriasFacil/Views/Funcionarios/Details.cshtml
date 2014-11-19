@@ -1,0 +1,122 @@
+﻿@model FeriasFacil.Models.Funcionario
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Funcionario</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Cargo.Nome)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Cargo.Nome)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Equipe.Nome)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Equipe.Nome)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Gerencia.Nome)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Gerencia.Nome)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Nome)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Nome)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DataAdmissao)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DataAdmissao)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Email)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Email)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Telefone)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Telefone)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Endereco)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Endereco)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.FotoTipo)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.FotoTipo)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.FotoNome)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.FotoNome)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Foto)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Foto)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Matricula)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Matricula)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CPF)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CPF)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.ID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
