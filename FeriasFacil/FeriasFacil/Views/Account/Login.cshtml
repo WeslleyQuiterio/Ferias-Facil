@@ -2,7 +2,7 @@
 @model LoginViewModel
 
 @{
-    ViewBag.Title = "Log in";
+    ViewBag.Title = "Férias Fácil";
 }
 
 <h2>@ViewBag.Title.</h2>
@@ -12,7 +12,7 @@
             @using (Html.BeginForm("Login", "Account", new { ReturnUrl = ViewBag.ReturnUrl }, FormMethod.Post, new { @class = "form-horizontal", role = "form" }))
             {
                 @Html.AntiForgeryToken()
-                <h4>Use a local account to log in.</h4>
+                <h4>Use os dados de sua conta para efetuar o login no sistema</h4>
                 <hr />
                 @Html.ValidationSummary(true, "", new { @class = "text-danger" })
                 <div class="form-group">
@@ -39,11 +39,11 @@
                 </div>
                 <div class="form-group">
                     <div class="col-md-offset-2 col-md-10">
-                        <input type="submit" value="Log in" class="btn btn-default" />
+                        <input type="submit" value="Entrar" class="btn btn-default" />
                     </div>
                 </div>
                 <p>
-                    @Html.ActionLink("Register as a new user", "Register")
+                    @Html.ActionLink("Registre-se como um novo usuário", "Register")
                 </p>
                 @* Enable this once you have account confirmation enabled for password reset functionality
                 <p>
